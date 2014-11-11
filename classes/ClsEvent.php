@@ -7,8 +7,8 @@ class ClsEvent{
 	public DateTime $eventStartDateTime;
 	public DateTime $eventEndDateTime;
 
-	public array<ClsUser> $staffMembers;
-	public array<ClsUser> $volunteers;
+	public ?array<ClsUser> $staffMembers;
+	public ?array<ClsUser> $volunteers;
 
 	public function __construct(string $_name,
 								ClsUser $_raiser,

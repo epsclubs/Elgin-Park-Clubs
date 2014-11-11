@@ -2,8 +2,8 @@
 class ClsClub{
 	public string $clbName;
 	public array<ClsClubAdmin> $clbAdmins;
-	public array<ClsClubMember> $clbMembers;
-	public array<ClsEvent> $clbEvents;
+	public ?array<ClsClubMember> $clbMembers;
+	public ?array<ClsEvent> $clbEvents;
 
 	public function __construct(string $_name,
 								array<ClsClubAdmin> $_admins,

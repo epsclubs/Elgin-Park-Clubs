@@ -8,8 +8,8 @@ class ClsUser{
 	private int $studentNumber;
 	public int $classOf;
 
-	public double $volunteerHrs;
-	public array<ClsEvent> $eventsVolunteered; //list of events volunteered at
+	public float $volunteerHrs;
+	public ?array<ClsEvent> $eventsVolunteered; //list of events volunteered at
 
 	public function __construct(string $_email,
 								string $_pass,
@@ -17,7 +17,7 @@ class ClsUser{
 								string $_lastName,
 								int $_studentNumber,
 								int $_classOf,
-								int $_volunteerHrs,
+								float $_volunteerHrs,
 								array<ClsEvent> $_eventsVolunteered)
 	{
 		$this->userEmail = $_email;
