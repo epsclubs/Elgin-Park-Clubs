@@ -1,13 +1,13 @@
-<?hh
+<?hh //strict
 /**
  * Controlling the modification of event properties.
- * @method addEvent, removeEvent, editEvent(get, update)
+ * @method addEvent, removeEvent, getInfo, updateEvent
  */
 class ClsEventController{
-	public static string $errorMsg;
+	public static string $errorMsg = '';
 
-	public static function addEvent(): ClsEvent{}
-	public static function removeEvent(ClsEvent $event): bool{}
-	public static function getEvent(string $eventName): ClsEvent{}
-	public static function updateEvent(ClsEvent $event): bool{}
+	public static function addEvent(): bool{return true;}
+	public static function removeEvent(ClsEvent $event): bool{return true;}
+	public static function getInfo(string $eventName): ClsEvent{return new ClsEvent();}
+	public static function updateEvent(ClsEvent $event): bool{return true;}
 }
