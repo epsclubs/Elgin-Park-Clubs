@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b8ee3de85442b3f1b11b6e6d757282e1",
+    "hash": "6a0db04089c4504a814b68e49ca3a1ed",
     "packages": [
         {
             "name": "mongofill/mongofill",

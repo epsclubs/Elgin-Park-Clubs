@@ -3,7 +3,9 @@
  * Controlling the modification of event properties.
  * @method addEvent, removeEvent, getInfo, updateEvent
  */
-class ClsEventController{
+namespace EPSClubs;
+
+class EventController{
 	public static string $errorMsg = '';
 
 	public static function addEvent(): bool{return true;}

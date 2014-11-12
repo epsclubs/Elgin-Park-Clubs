@@ -1,5 +1,6 @@
 <?hh //strict
-class ClsClub{
+namespace EPSClubs;
+class Club{
 	public string $clbName;
 	public array<ClsClubAdmin> $clbAdmins;
 	public ?array<ClsClubMember> $clbMembers;

@@ -1,6 +1,7 @@
 <?hh //strict
+namespace EPSClubs;
 
-class ClsEvent{
+class Event{
 	public string $eventName;
 	public ClsUser $eventRaiser;
 	public string $eventLocation;

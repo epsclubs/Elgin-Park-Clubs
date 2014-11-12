@@ -1,6 +1,6 @@
 <?hh //strict
-
-class ClsUser{
+namespace EPSClubs;
+class User{
 	public string $userEmail;
 	private string $userPass;
 	public string $firstName;
@@ -18,7 +18,7 @@ class ClsUser{
 								int $_studentNumber,
 								int $_classOf,
 								float $_volunteerHrs,
-								array<ClsEvent> $_eventsVolunteered)
+								?array<ClsEvent> $_eventsVolunteered)
 	{
 		$this->userEmail = $_email;
 		$this->userPass = $_pass;
@@ -28,5 +28,15 @@ class ClsUser{
 		$this->classOf = $_classOf;
 		$this->volunteerHrs = $_volunteerHrs;
 		$this->eventsVolunteered = $_eventsVolunteered;
+	}
+
+	public function toArray():array<T>{
+		return array('userEmail' => $this->userEmail,
+						'userPass' => $this->userPass,
+						'firstName' => $this->firstName,
+						'lastName' => $this->lastName,
+						'studentNumber' => $this->studentNumber,
+						'classOf' => $this->classOf,
+						'volunteerHrs' => $this->volunteerHrs);
 	}
 }
