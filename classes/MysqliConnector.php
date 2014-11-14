@@ -2,10 +2,10 @@
 namespace EPSClubs;
 
 class MysqliConnector{
-	private static string $host = 'wrssnewcomers.com';
-	private static string $db = 'newcomer_epsclubs';
-	private static string $user = 'newcomer_eps';
-	private static string $pass = 'epsclubs';
+	private static string $host = 'host';
+	private static string $db = 'db';
+	private static string $user = 'user';
+	private static string $pass = 'pass';
 
 	public static function connect(): ?\mysqli{
 		$mysqli = new \mysqli(self::$host, self::$user, self::$pass, self::$db);
