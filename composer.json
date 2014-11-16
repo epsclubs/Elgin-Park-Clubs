@@ -1,8 +1,0 @@
-{
-    "require": {
-        "mongofill/mongofill": "dev-master"
-    },
-    "autoload": {
-    	"psr-4": {"EPSClubs\\": "classes/"}
-    }
-}
