@@ -102,7 +102,7 @@ $white       : #FFFFFF;
 // $white-smoke : #F5F5F5;
 // $silver      : #EFEFEF;
 // $smoke       : #EEEEEE;
-// $gainsboro   : #DDDDDD;
+$gainsboro   : #DDDDDD;
 // $iron        : #CCCCCC;
 // $base        : #AAAAAA;
 // $aluminum    : #999999;
@@ -114,9 +114,10 @@ $white       : #FFFFFF;
 // $oil         : #333333;
 $jet         : #222222;
 $black       : #000000;
+$purple		 : #46166B;
 
 // We use these as default colors throughout
-$primary-color: $white;
+$primary-color: $purple;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -131,7 +132,7 @@ $body-bg: $black;
 // $body-font-style: normal;
 
 // We use this to control font-smoothing
-// $font-smoothing: antialiased;
+$font-smoothing: antialiased;
 
 // We use these to control text direction settings
 // $text-direction: ltr;
@@ -261,7 +262,7 @@ $body-bg: $black;
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
 // $hr-border-style: solid;
-// $hr-border-color: $gainsboro;
+$hr-border-color: $jet;
 // $hr-margin: rem-calc(20);
 
 // We use these to style lists
